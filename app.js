@@ -215,5 +215,5 @@ $('#moreBtn').onclick=e=>{e.stopPropagation();$('#more').classList.toggle('hidde
 $('#more').onclick=e=>{if(!e.target.closest('select'))setTimeout(()=>$('#more').classList.add('hidden'),0);const g=e.target.closest('[data-go]');if(g)go(g.dataset.go)};
 document.addEventListener('click',e=>{if(!e.target.closest('#more,#moreBtn'))$('#more').classList.add('hidden')});
 $('#eqBtn2').onclick=()=>$('#eqBtn').click();$('#queueBtn').onclick=()=>go('queue');
-$('#back').onclick=()=>{if(hpos>0)go(hist[--hpos],false)};$('#fwd').onclick=()=>{if(hpos<hist.length-1)go(hist[++hpos],false)};
+
 $('#npMore').onclick=e=>ctxMenu(e,[['Lyrics',()=>lyricsModal(false)],['Karaoke Mode',()=>lyricsModal(true)],[cur&&cur.fav?'Unfavourite':'Favourite',()=>$('#favBtn').click()],['Share…',()=>cur&&share(cur)],['Mini Player',()=>$('#miniBtn').click()],['Up Next',()=>go('queue')]]);
