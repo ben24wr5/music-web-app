@@ -4,8 +4,8 @@ body{margin:0;font:13px -apple-system,BlinkMacSystemFont,"SF Pro Text","Inter","
 #win{height:100%;display:grid;grid-template-columns:190px 1fr;grid-template-rows:1fr 70px;background:var(--bg);border:1px solid #2e2c38;border-radius:12px;overflow:hidden;box-shadow:0 20px 60px #000a}
 svg:not([width]){width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none}
 button{font:inherit;color:var(--fg);cursor:pointer}
-#side{background:var(--side);border-right:1px solid var(--line);padding:14px 8px;display:flex;flex-direction:column;overflow:auto}
-.traffic{display:flex;gap:8px;margin:0 8px 22px}.traffic i{width:12px;height:12px;border-radius:50%;background:#ff5f57}.traffic i:nth-child(2){background:#febc2e}.traffic i:nth-child(3){background:#28c840}
+#side{background:var(--side);border-right:1px solid var(--line);padding:16px 8px 14px;display:flex;flex-direction:column;overflow:auto}
+
 .sec{color:var(--mut);font-size:10.5px;letter-spacing:.08em;font-weight:600;margin:4px 9px 6px}
 .sep{height:1px;background:var(--line);margin:12px 8px}
 #side a{display:flex;gap:10px;align-items:center;padding:7px 9px;border-radius:7px;cursor:pointer;color:#d8d5e2;margin-bottom:2px}
